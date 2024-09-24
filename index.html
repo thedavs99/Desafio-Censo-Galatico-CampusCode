@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR WARS PLANTETS</title>
+
+</head>
+
+<body>
+    <script>
+        async function printData(){
+            let res = await fetch('https://swapi.dev/api/planets/?format=json');
+            let data = await res.json()
+            console.log(data);
+        };
+        printData();
+    </script>
+    <div>
+        <h1 id="result">STAR WARS PLANTETS</h1>
+    </div>
+   
+</body>
+</html>
